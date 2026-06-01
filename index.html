@@ -140,14 +140,15 @@ Luasnya :200
         <li>Lokasi: Serang, Banten, Indonesia</li>
     </ul>
 
-    <!-- Form Kirim Pesan -->
+        <!-- Form Kirim Pesan yang Baru & Bisa Diklik -->
     <p style="color: #fff; font-size: 18px; margin-bottom: 5px;">Kirim Pesan</p>
-    <form style="margin-bottom: 40px;">
-        <input type="text" placeholder="Nama Lengkap">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Pesan">
-        <button type="button" class="btn-submit">Kirim Pesan</button>
+    <form action="mailto:mraiyan807@gmail.com" method="post" enctype="text/plain" style="margin-bottom: 40px;">
+        <input type="text" name="Nama" placeholder="Nama Lengkap" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <textarea name="Pesan" placeholder="Pesan" rows="3" style="width: 100%; padding: 10px; margin: 8px 0; background: #111; border: 1px solid #333; border-radius: 4px; color: #fff; box-sizing: border-box;" required></textarea>
+        <input type="submit" value="Kirim Pesan" style="background: none; border: none; color: #3b82f6; text-decoration: underline; padding: 0; cursor: pointer; font-size: 16px; text-align: left; display: block; width: auto;">
     </form>
+
 
     <!-- Informasi Kontak Bawah -->
     <p style="color: #fff; font-size: 18px; margin-bottom: 15px;">Informasi Kontak</p>
@@ -157,9 +158,14 @@ Luasnya :200
         <li>Serang, Banten, Indonesia</li>
     </ul>
 
-    <!-- Media Sosial -->
+        <!-- Bagian Media Sosial yang Baru & Bisa Diklik -->
     <h1 style="font-size: 24px; margin-bottom: 15px;">Media Sosial</h1>
-    <p style="color: #ccc; font-size: 16px;">ig: raiyann.1</p>
+    <p style="font-size: 16px;">
+        <a href="https://instagram.com/raiyann.1" target="_blank" style="color: #3b82f6; text-decoration: underline; display: flex; align-items: center; gap: 8px;">
+            <i class="fab fa-instagram" style="font-size: 20px;"></i> ig: raiyann.1
+        </a>
+    </p>
+
 
 </div>
 
