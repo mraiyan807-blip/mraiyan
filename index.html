@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Muhammad Raiyan Nashir</title>
-    <!-- Font Awesome Ikon -->
+    <!-- Ikon Otomatis -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #000000; color: #ffffff; }
-        .container { max-width: 650px; background: #0a0a0a; padding: 30px; margin: auto; border-radius: 12px; border: 1px solid #222; }
+        .container { max-width: 650px; background: #0a0a0a; padding: 30px; margin: auto; border-radius: 12px; border: 1px solid #222; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
         
         /* Navigasi */
         .nav-links { margin-bottom: 30px; border-bottom: 1px solid #222; padding-bottom: 15px; }
@@ -21,10 +21,10 @@
         .section-title-bold { font-weight: bold; font-size: 22px; }
         
         .edu-item { margin-bottom: 25px; }
-        .edu-title { font-size: 16px; color: #ffffff; margin-bottom: 5px; }
+        .edu-title { font-size: 16px; color: #ffffff; margin-bottom: 5px; font-weight: bold; }
         .edu-desc { color: #aaaaaa; font-size: 15px; }
         
-        /* Gaya Kotak Kodingan C++ */
+        /* Kotak C++ */
         .code-container { background-color: #1e1e1e; border: 1px solid #333; border-radius: 6px; margin: 15px 0; }
         .code-header { background: #2d2d2d; color: #cccccc; padding: 8px 15px; font-size: 13px; display: flex; justify-content: space-between; border-radius: 6px 6px 0 0; font-family: monospace; }
         .code-block { color: #d4d4d4; padding: 15px; font-family: 'Courier New', Courier, monospace; font-size: 13px; overflow-x: auto; margin: 0; background: #1e1e1e; }
@@ -32,7 +32,7 @@
         .compile-result { background-color: #1e1e1e; color: #ffffff; padding: 15px; font-family: monospace; font-size: 13px; margin: 0; white-space: pre-wrap; border-radius: 0 0 6px 6px; }
         .project-desc { font-weight: bold; color: #ffffff; font-size: 15px; margin-top: 8px; margin-bottom: 30px; display: block; }
 
-        /* Skill & Form */
+        /* List & Form */
         ul { padding-left: 20px; margin: 10px 0; }
         li { margin-bottom: 8px; color: #cccccc; }
         input, textarea { width: 100%; padding: 10px; margin: 8px 0; background: #111; border: 1px solid #333; border-radius: 4px; color: #fff; box-sizing: border-box; }
@@ -47,17 +47,18 @@
 
 <div class="container">
     
-    <!-- Navigasi sesuai gambar 1 -->
+    <!-- Navigasi -->
     <div class="nav-links">
         <span style="color:#fff; display:block; margin-bottom:5px; font-weight:bold;">M raiyan</span>
         <a href="#home">Home</a> <a href="#about">About</a> <a href="#pendidikan">Pendidikan</a> <a href="#portfolio">Portfolio</a> <a href="#skills">Skills</a> <a href="#contact">Contact</a><br>
         <a href="#home">Home</a> <a href="#about">About</a> <a href="#pendidikan">Pendidikan</a> <a href="#portfolio">Portfolio</a> <a href="#skills">Skills</a> <a href="#contact">Contact</a>
     </div>
 
-    <!-- Header info -->
+    <!-- Intro -->
     <p class="intro-text" id="home">Halo, Saya <span style="font-size: 32px; font-weight: bold; color: #fff; display: block; margin-top: 5px;">Muhammad raiyan nashir</span></p>
     <p class="intro-text">Saya adalah mahasiswa Sistem Informasi yang tertarik dengan analisis data, manajemen basis data, dan pengembangan web.</p>
 
+    <!-- Pendidikan -->
     <h3 class="section-title-bold" id="pendidikan">Perjalanan Pendidikan</h3>
     
     <div class="edu-item">
@@ -75,12 +76,13 @@
         <div class="edu-desc">SMA 1 Ciruas<br>2022- 2025</div>
     </div>
 
+    <!-- Tentang Saya -->
     <h3 class="section-title-bold" id="about">Tentang Saya</h3>
     <p class="intro-text">Saya adalah mahasiswa program studi Sistem Informasi di Universitas Pamulang (UNPAM) Serang dan merupakan lulusan dari SMA 1 Ciruas tahun 2025. Saya memiliki ketertarikan yang besar di bidang teknologi, manajemen basis data, serta analisis sistem.</p>
 
+    <!-- Project -->
     <h3 class="section-title-bold" id="portfolio">Portofolio Saya</h3>
     
-    <!-- Project 1 -->
     <p style="color: #fff; margin-bottom: 5px;">Project1</p>
     <div class="code-container">
         <div class="code-header"><span>Coding C++</span><span>RUN &nbsp; MENU</span></div>
@@ -103,7 +105,6 @@ Tagihan:$1800
     </div>
     <span class="project-desc">Program Menghitung Biaya Sewa dengan Diskon di aplikasi c++</span>
 
-    <!-- Project 2 -->
     <p style="color: #fff; margin-bottom: 5px;">Project2</p>
     <div class="code-container">
         <div class="code-header"><span>Coding C++</span><span>RUN &nbsp; MENU</span></div>
@@ -124,7 +125,7 @@ Luasnya :200
     </div>
     <span class="project-desc">Program Menghitung Luas Persegi Panjang</span>
 
-    <!-- Keahlian -->
+    <!-- Skills -->
     <h3 id="skills" style="font-weight: bold;">Keahlian Saya</h3>
     <ul>
         <li>Desain grafis</li>
@@ -132,7 +133,7 @@ Luasnya :200
         <li>C++</li>
     </ul>
 
-    <!-- Kontak Utama -->
+    <!-- Kontak -->
     <h3 id="contact" style="font-weight: bold;">Hubungi Saya</h3>
     <ul class="contact-list" style="margin-bottom: 30px;">
         <li>Email: <a href="mailto:mraiyan807@gmail.com">mraiyan807@gmail.com</a></li>
@@ -140,7 +141,7 @@ Luasnya :200
         <li>Lokasi: Serang, Banten, Indonesia</li>
     </ul>
 
-        <!-- Form Kirim Pesan yang Baru & Bisa Diklik -->
+    <!-- Form Kirim Pesan Aktif -->
     <p style="color: #fff; font-size: 18px; margin-bottom: 5px;">Kirim Pesan</p>
     <form action="mailto:mraiyan807@gmail.com" method="post" enctype="text/plain" style="margin-bottom: 40px;">
         <input type="text" name="Nama" placeholder="Nama Lengkap" required>
@@ -149,8 +150,6 @@ Luasnya :200
         <input type="submit" value="Kirim Pesan" style="background: none; border: none; color: #3b82f6; text-decoration: underline; padding: 0; cursor: pointer; font-size: 16px; text-align: left; display: block; width: auto;">
     </form>
 
-
-    <!-- Informasi Kontak Bawah -->
     <p style="color: #fff; font-size: 18px; margin-bottom: 15px;">Informasi Kontak</p>
     <ul class="contact-list" style="margin-bottom: 30px;">
         <li>mraiyan807@gmail.com</li>
@@ -158,14 +157,13 @@ Luasnya :200
         <li>Serang, Banten, Indonesia</li>
     </ul>
 
-        <!-- Bagian Media Sosial yang Baru & Bisa Diklik -->
+    <!-- Instagram Aktif -->
     <h1 style="font-size: 24px; margin-bottom: 15px;">Media Sosial</h1>
     <p style="font-size: 16px;">
         <a href="https://instagram.com/raiyann.1" target="_blank" style="color: #3b82f6; text-decoration: underline; display: flex; align-items: center; gap: 8px;">
             <i class="fab fa-instagram" style="font-size: 20px;"></i> ig: raiyann.1
         </a>
     </p>
-
 
 </div>
 
