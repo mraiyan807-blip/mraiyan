@@ -1,61 +1,166 @@
- <!DOCTYPE html>
- <html lang="id">
- <head>
- <meta charset="UTF-8">
-
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Muhammad Raiyan Nashir</title>
+    <!-- Font Awesome Ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #fafafa; color: #333; }
-        .container { max-width: 600px; background: white; padding: 25px; margin: auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        h1 { margin-bottom: 5px; color: #111; }
-        .subtitle { color: #007bff; font-weight: bold; font-size: 15px; margin-top: 0; margin-bottom: 20px; }
-        h3 { border-bottom: 2px solid #007bff; padding-bottom: 5px; color: #111; margin-top: 25px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        .social-icons a { font-size: 28px; margin-right: 20px; color: #333; text-decoration: none; }
-        .social-icons a:hover { color: #007bff; }
-        input, textarea { width: 100%; padding: 8px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
-        button { background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #000000; color: #ffffff; }
+        .container { max-width: 650px; background: #0a0a0a; padding: 30px; margin: auto; border-radius: 12px; border: 1px solid #222; }
+        
+        /* Navigasi */
+        .nav-links { margin-bottom: 30px; border-bottom: 1px solid #222; padding-bottom: 15px; }
+        .nav-links a { color: #3b82f6; text-decoration: underline; margin-right: 15px; font-size: 14px; }
+        
+        h1 { margin-bottom: 5px; color: #ffffff; font-size: 32px; font-weight: bold; }
+        .intro-text { color: #cccccc; font-size: 16px; margin-bottom: 30px; }
+        
+        h3 { color: #ffffff; margin-top: 40px; margin-bottom: 15px; font-size: 20px; font-weight: normal; }
+        .section-title-bold { font-weight: bold; font-size: 22px; }
+        
+        .edu-item { margin-bottom: 25px; }
+        .edu-title { font-size: 16px; color: #ffffff; margin-bottom: 5px; }
+        .edu-desc { color: #aaaaaa; font-size: 15px; }
+        
+        /* Gaya Kotak Kodingan C++ */
+        .code-container { background-color: #1e1e1e; border: 1px solid #333; border-radius: 6px; margin: 15px 0; }
+        .code-header { background: #2d2d2d; color: #cccccc; padding: 8px 15px; font-size: 13px; display: flex; justify-content: space-between; border-radius: 6px 6px 0 0; font-family: monospace; }
+        .code-block { color: #d4d4d4; padding: 15px; font-family: 'Courier New', Courier, monospace; font-size: 13px; overflow-x: auto; margin: 0; background: #1e1e1e; }
+        .compile-header { background: #252526; color: #aaaaaa; padding: 6px 15px; font-size: 12px; border-top: 1px solid #333; font-family: monospace; }
+        .compile-result { background-color: #1e1e1e; color: #ffffff; padding: 15px; font-family: monospace; font-size: 13px; margin: 0; white-space: pre-wrap; border-radius: 0 0 6px 6px; }
+        .project-desc { font-weight: bold; color: #ffffff; font-size: 15px; margin-top: 8px; margin-bottom: 30px; display: block; }
+
+        /* Skill & Form */
+        ul { padding-left: 20px; margin: 10px 0; }
+        li { margin-bottom: 8px; color: #cccccc; }
+        input, textarea { width: 100%; padding: 10px; margin: 8px 0; background: #111; border: 1px solid #333; border-radius: 4px; color: #fff; box-sizing: border-box; }
+        .btn-submit { background: none; border: none; color: #3b82f6; text-decoration: underline; padding: 0; cursor: pointer; font-size: 16px; text-align: left; width: auto; margin: 5px 0; display: block; }
+        
+        .contact-list { list-style: none; padding-left: 0; }
+        .contact-list li { color: #ffffff; margin-bottom: 10px; }
+        .contact-list a { color: #3b82f6; text-decoration: underline; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Muhammad Raiyan Nashir</h1>
-    <p class="subtitle">Mahasiswa Sistem Informasi</p>
+    
+    <!-- Navigasi sesuai gambar 1 -->
+    <div class="nav-links">
+        <span style="color:#fff; display:block; margin-bottom:5px; font-weight:bold;">M raiyan</span>
+        <a href="#home">Home</a> <a href="#about">About</a> <a href="#pendidikan">Pendidikan</a> <a href="#portfolio">Portfolio</a> <a href="#skills">Skills</a> <a href="#contact">Contact</a><br>
+        <a href="#home">Home</a> <a href="#about">About</a> <a href="#pendidikan">Pendidikan</a> <a href="#portfolio">Portfolio</a> <a href="#skills">Skills</a> <a href="#contact">Contact</a>
+    </div>
 
-    <h3>Tentang Saya</h3>
-    <p>Saya adalah mahasiswa Sistem Informasi yang tertarik dengan analisis data, manajemen basis data, dan pengembangan web.</p>
+    <!-- Header info -->
+    <p class="intro-text" id="home">Halo, Saya <span style="font-size: 32px; font-weight: bold; color: #fff; display: block; margin-top: 5px;">Muhammad raiyan nashir</span></p>
+    <p class="intro-text">Saya adalah mahasiswa Sistem Informasi yang tertarik dengan analisis data, manajemen basis data, dan pengembangan web.</p>
 
-    <h3>Perjalanan Pendidikan</h3>
+    <h3 class="section-title-bold" id="pendidikan">Perjalanan Pendidikan</h3>
+    
+    <div class="edu-item">
+        <div class="edu-title">Sekolah Dasar (SD)</div>
+        <div class="edu-desc">SDN Periuk<br>2013- 2019</div>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-title">Sekolah Menengah Pertama (SMP)</div>
+        <div class="edu-desc">MTS Negeri 1 serang<br>2019- 2022</div>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-title">Sekolah Menengah Atas (SMA)</div>
+        <div class="edu-desc">SMA 1 Ciruas<br>2022- 2025</div>
+    </div>
+
+    <h3 class="section-title-bold" id="about">Tentang Saya</h3>
+    <p class="intro-text">Saya adalah mahasiswa program studi Sistem Informasi di Universitas Pamulang (UNPAM) Serang dan merupakan lulusan dari SMA 1 Ciruas tahun 2025. Saya memiliki ketertarikan yang besar di bidang teknologi, manajemen basis data, serta analisis sistem.</p>
+
+    <h3 class="section-title-bold" id="portfolio">Portofolio Saya</h3>
+    
+    <!-- Project 1 -->
+    <p style="color: #fff; margin-bottom: 5px;">Project1</p>
+    <div class="code-container">
+        <div class="code-header"><span>Coding C++</span><span>RUN &nbsp; MENU</span></div>
+        <pre class="code-block">#include &lt;iostream&gt;
+using namespace std;
+
+float hitung_tagihan(float tarif, float durasi, float persen_diskon){
+    float tagihan = tarif * durasi;
+    float potongan = tagihan * (persen_diskon / 100);
+    float tagihan_akhir = tagihan - potongan;
+    return tagihan_akhir;
+}</pre>
+        <div class="compile-header">Compile Result</div>
+        <pre class="compile-result">Masukan tarif sewa:1000
+Masukan durasi sewa(jam):2
+Masukan persen_diskon(%):10
+Tagihan:$1800
+
+[Process completed - press Enter]</pre>
+    </div>
+    <span class="project-desc">Program Menghitung Biaya Sewa dengan Diskon di aplikasi c++</span>
+
+    <!-- Project 2 -->
+    <p style="color: #fff; margin-bottom: 5px;">Project2</p>
+    <div class="code-container">
+        <div class="code-header"><span>Coding C++</span><span>RUN &nbsp; MENU</span></div>
+        <pre class="code-block">#include &lt;iostream&gt;
+using namespace std;
+
+int hitung_luas(int p, int l){
+    int luas = p * l;
+    return luas;
+}</pre>
+        <div class="compile-header">Compile Result</div>
+        <pre class="compile-result">panjang : 10
+lebar : 15
+Masukkan lebar: 20
+Luasnya :200
+
+[Process completed - press Enter]</pre>
+    </div>
+    <span class="project-desc">Program Menghitung Luas Persegi Panjang</span>
+
+    <!-- Keahlian -->
+    <h3 id="skills" style="font-weight: bold;">Keahlian Saya</h3>
     <ul>
-        <li><strong>Sekolah Dasar (SD)</strong><br>SDN Periuk (2013 - 2019)</li>
+        <li>Desain grafis</li>
+        <li>Microsoft word,excel</li>
+        <li>C++</li>
     </ul>
 
-    <h3>Kirim Pesan</h3>
-    <form>
-        <label>Nama Lengkap</label>
-        <input type="text" placeholder="Nama Anda">
-        <label>Email</label>
-        <input type="email" placeholder="email@example.com">
-        <label>Pesan</label>
-        <textarea placeholder="Pesan Anda" rows="4"></textarea>
-        <button type="button">Kirim Pesan</button>
+    <!-- Kontak Utama -->
+    <h3 id="contact" style="font-weight: bold;">Hubungi Saya</h3>
+    <ul class="contact-list" style="margin-bottom: 30px;">
+        <li>Email: <a href="mailto:mraiyan807@gmail.com">mraiyan807@gmail.com</a></li>
+        <li>No.Hp: 085946287211</li>
+        <li>Lokasi: Serang, Banten, Indonesia</li>
+    </ul>
+
+    <!-- Form Kirim Pesan -->
+    <p style="color: #fff; font-size: 18px; margin-bottom: 5px;">Kirim Pesan</p>
+    <form style="margin-bottom: 40px;">
+        <input type="text" placeholder="Nama Lengkap">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Pesan">
+        <button type="button" class="btn-submit">Kirim Pesan</button>
     </form>
 
-    <h3>Informasi Kontak</h3>
-    <ul>
-        <li>📩 mraiyan807@gmail.com</li>
-        <li>📞 +62 859-4628-7211</li>
-        <li>📍 Serang, Banten, Indonesia</li>
+    <!-- Informasi Kontak Bawah -->
+    <p style="color: #fff; font-size: 18px; margin-bottom: 15px;">Informasi Kontak</p>
+    <ul class="contact-list" style="margin-bottom: 30px;">
+        <li>mraiyan807@gmail.com</li>
+        <li>+62 85946287211</li>
+        <li>Serang, Banten, Indonesia</li>
     </ul>
 
-    <h3>Media Sosial</h3>
-    <div class="social-icons">
-        <a href="https://instagram.com/raiyann.1" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
+    <!-- Media Sosial -->
+    <h1 style="font-size: 24px; margin-bottom: 15px;">Media Sosial</h1>
+    <p style="color: #ccc; font-size: 16px;">ig: raiyann.1</p>
+
 </div>
 
 </body>
