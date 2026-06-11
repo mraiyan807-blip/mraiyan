@@ -27,7 +27,7 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.5);
         }
         
-        /* Navigasi Struktur .nav-links (Bebas Bug Menu Double) */
+        /* Navigasi Struktur .nav-links */
         .nav-links {
             border-bottom: 1px solid #30363d;
             padding-bottom: 20px;
@@ -70,7 +70,7 @@
             font-weight: bold;
         }
 
-        /* Desain Foto Profil Bulat Format PNG */
+        /* Desain Foto Profil Bulat Ber-efek Hover */
         .profile-photo-container {
             margin-bottom: 25px;
             text-align: left;
@@ -82,6 +82,11 @@
             object-fit: cover;
             border: 3px solid #58a6ff;
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .profile-photo:hover {
+            transform: scale(1.05); /* Sedikit membesar pas disentuh */
+            border-color: #238636; /* List berubah hijau pas mau diklik */
         }
 
         /* Desain Riwayat Pendidikan */
@@ -169,7 +174,7 @@
 <body>
 
 <div class="container">
-    <!-- Menu Navigasi Berwarna Atas -->
+    <!-- Menu Navigasi Atas -->
     <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -177,15 +182,17 @@
         <a href="#portfolio">Portfolio</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <!-- TOMBOL CV PDF DI ATAS -->
+        <!-- Link Tambahan ke CV -->
         <a href="cv-raiyan.pdf" target="_blank" style="color: #ffffff; background-color: #238636; padding: 4px 10px; border-radius: 4px; font-weight: bold; text-decoration: none; margin-left: 5px;">CV PDF</a>
     </div>
 
     <!-- Beranda / Home Section -->
     <section id="home">
-        <!-- Foto Muka Format PNG Lu -->
+        <!-- FOTO MUKA BISA DIKLIK MASUK KE CV -->
         <div class="profile-photo-container">
-            <img src="foto-raiyan.png" alt="Foto Muhammad Raiyan Nashir" class="profile-photo">
+            <a href="cv-raiyan.pdf" target="_blank" title="Klik untuk lihat CV">
+                <img src="foto-raiyan.png" alt="Foto Muhammad Raiyan Nashir" class="profile-photo" style="cursor: pointer;">
+            </a>
         </div>
         
         <p>Halo, Saya</p>
