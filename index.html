@@ -3,304 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio | Muhammad Raiyan Nashir</title>
+    <title>Portofolio Muhammad Raiyan Nashir</title>
+    <!-- Ikon Otomatis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* CSS Reset & Tampilan Dasar */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: #0d1117;
-            color: #c9d1d9;
-            line-height: 1.6;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #161b22;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #000000; color: #ffffff; }
+        .container { max-width: 650px; background: #0a0a0a; padding: 30px; margin: auto; border-radius: 12px; border: 1px solid #222; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
         
-        /* Navigasi Struktur .nav-links */
-        .nav-links {
-            border-bottom: 1px solid #30363d;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            align-items: center;
-        }
-        .nav-links a {
-            color: #58a6ff;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* Desain Bagian/Section */
-        section {
-            margin-bottom: 35px;
-            scroll-margin-top: 20px;
-        }
-        h2 {
-            color: #f0f6fc;
-            font-size: 22px;
-            border-bottom: 1px solid #30363d;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-        p {
-            margin-bottom: 15px;
-            color: #8b949e;
-        }
-        .hero-title {
-            font-size: 32px;
-            color: #f0f6fc;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-
-        /* Desain Foto Profil Bulat Ber-efek Hover */
-        .profile-photo-container {
-            margin-bottom: 25px;
-            text-align: left;
-        }
-        .profile-photo {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #58a6ff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            transition: transform 0.2s, border-color 0.2s;
-        }
-        .profile-photo:hover {
-            transform: scale(1.05); /* Sedikit membesar pas disentuh */
-            border-color: #238636; /* List berubah hijau pas mau diklik */
-        }
-
-        /* Desain Riwayat Pendidikan */
-        ul.edu-list, ul.skills-list {
-            list-style-type: none;
-        }
-        ul.edu-list li {
-            margin-bottom: 15px;
-            position: relative;
-            padding-left: 15px;
-        }
-        ul.edu-list li::before {
-            content: "•";
-            color: #58a6ff;
-            position: absolute;
-            left: 0;
-        }
-        .edu-year {
-            color: #8b949e;
-            font-size: 14px;
-        }
-        .edu-name {
-            color: #f0f6fc;
-            font-weight: bold;
-        }
-
-        /* Desain Komponen Proyek Portfolio */
-        .project-group {
-            margin-bottom: 25px;
-        }
-        .project-group h3 {
-            color: #58a6ff;
-            margin-bottom: 12px;
-            font-size: 18px;
-            border-left: 3px solid #58a6ff;
-            padding-left: 10px;
-        }
-        .project-card {
-            background: #21262d;
-            padding: 15px;
-            border-radius: 6px;
-            margin-bottom: 12px;
-            border: 1px solid #30363d;
-        }
-        .project-card h4 {
-            color: #f0f6fc;
-            margin-bottom: 5px;
-        }
-        .project-card p {
-            font-size: 14px;
-            margin-bottom: 10px;
-            color: #8b949e;
-        }
-        .project-link {
-            display: inline-block;
-            color: #58a6ff;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-        }
-        .project-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Info Kontak */
-        .contact-info p {
-            margin-bottom: 8px;
-            color: #c9d1d9;
-        }
-        .contact-info strong {
-            color: #f0f6fc;
-        }
+        /* Navigasi */
+        .nav-links { margin-bottom: 30px; border-bottom: 1px solid #222; padding-bottom: 15px; }
+        .nav-links a { color: #3b82f6; text-decoration: underline; margin-right: 15px; font-size: 14px; }
         
-        /* Footer */
-        footer {
-            text-align: center;
-            margin-top: 10px;
-            padding-top: 20px;
-            border-top: 1px solid #30363d;
-            font-size: 13px;
-            color: #8b949e;
-        }
+        h1 { margin-bottom: 5px; color: #ffffff; font-size: 32px; font-weight: bold; }
+        .intro-text { color: #cccccc; font-size: 16px; margin-bottom: 30px; }
+        
+        h3 { color: #ffffff; margin-top: 40px; margin-bottom: 15px; font-size: 20px; font-weight: normal; }
+        .section-title-bold { font-weight: bold; font-size: 22px; }
+        
+        .edu-item { margin-bottom: 25px; }
+        .edu-title { font-size: 16px; color: #ffffff; margin-bottom: 5px; font-weight: bold; }
+        .edu-desc { color: #aaaaaa; font-size: 15px; }
+        
+        /* Kotak C++ */
+        .code-container { background-color: #1e1e1e; border: 1px solid #333; border-radius: 6px; margin: 15px 0; }
+        .code-header { background: #2d2d2d; color: #cccccc; padding: 8px 15px; font-size: 13px; display: flex; justify-content: space-between; border-radius: 6px 6px 0 0; font-family: monospace; }
+        .code-block { color: #d4d4d4; padding: 15px; font-family: 'Courier New', Courier, monospace; font-size: 13px; overflow-x: auto; margin: 0; background: #1e1e1e; }
+        .compile-header { background: #252526; color: #aaaaaa; padding: 6px 15px; font-size: 12px; border-top: 1px solid #333; font-family: monospace; }
+        .compile-result { background-color: #1e1e1e; color: #ffffff; padding: 15px; font-family: monospace; font-size: 13px; margin: 0; white-space: pre-wrap; border-radius: 0 0 6px 6px; }
+        .project-desc { font-weight: bold; color: #ffffff; font-size: 15px; margin-top: 8px; margin-bottom: 30px; display: block; }
+
+        /* List & Form */
+        ul { padding-left: 20px; margin: 10px 0; }
+        li { margin-bottom: 8px; color: #cccccc; }
+        input, textarea { width: 100%; padding: 10px; margin: 8px 0; background: #111; border: 1px solid #333; border-radius: 4px; color: #fff; box-sizing: border-box; }
+        .btn-submit { background: none; border: none; color: #3b82f6; text-decoration: underline; padding: 0; cursor: pointer; font-size: 16px; text-align: left; width: auto; margin: 5px 0; display: block; }
+        
+        .contact-list { list-style: none; padding-left: 0; }
+        .contact-list li { color: #ffffff; margin-bottom: 10px; }
+        .contact-list a { color: #3b82f6; text-decoration: underline; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <!-- Menu Navigasi Atas -->
+    
+    <!-- Navigasi -->
     <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#pendidikan">Pendidikan</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <!-- Link Tambahan ke CV -->
-        <a href="cv-raiyan.pdf" target="_blank" style="color: #ffffff; background-color: #238636; padding: 4px 10px; border-radius: 4px; font-weight: bold; text-decoration: none; margin-left: 5px;">CV PDF</a>
+        <span style="color:#fff; display:block; margin-bottom:5px; font-weight:bold;">M raiyan</span>
+        <a href="#home">Home</a> <a href="#about">About</a> <a href="#pendidikan">Pendidikan</a> <a href="#portfolio">Portfolio</a> <a href="#skills">Skills</a> <a href="#contact">Contact</a><br>
+        <a href="#home">Home</a> <a href="#about">About</a> <a href="#pendidikan">Pendidikan</a> <a href="#portfolio">Portfolio</a> <a href="#skills">Skills</a> <a href="#contact">Contact</a>
     </div>
 
-    <!-- Beranda / Home Section -->
-    <section id="home">
-        <!-- FOTO MUKA BISA DIKLIK MASUK KE CV -->
-        <div class="profile-photo-container">
-            <a href="cv-raiyan.pdf" target="_blank" title="Klik untuk lihat CV">
-                <img src="foto-raiyan.png" alt="Foto Muhammad Raiyan Nashir" class="profile-photo" style="cursor: pointer;">
-            </a>
-        </div>
-        
-        <p>Halo, Saya</p>
-        <h1 class="hero-title">Muhammad raiyan nashir</h1>
-        <p>Saya adalah mahasiswa Sistem Informasi yang tertarik dengan analisis data, manajemen basis data, dan pengembangan web.</p>
-    </section>
+    <!-- Intro -->
+    <p class="intro-text" id="home">Halo, Saya <span style="font-size: 32px; font-weight: bold; color: #fff; display: block; margin-top: 5px;">Muhammad raiyan nashir</span></p>
+    <p class="intro-text">Saya adalah mahasiswa Sistem Informasi yang tertarik dengan analisis data, manajemen basis data, dan pengembangan web.</p>
 
-    <!-- Tentang Saya / About Section -->
-    <section id="about">
-        <h2>About</h2>
-        <p>Saya adalah mahasiswa Program Studi Sistem Informasi di Universitas Pamulang Serang yang memiliki minat mendalam pada bidang teknologi informasi dan pengembangan web. Saya senang mempelajari hal baru, disiplin, serta mampu bekerja secara individu maupun dalam tim untuk mengembangkan solusi digital yang efektif.</p>
-    </section>
+    <!-- Pendidikan -->
+    <h3 class="section-title-bold" id="pendidikan">Perjalanan Pendidikan</h3>
+    
+    <div class="edu-item">
+        <div class="edu-title">Sekolah Dasar (SD)</div>
+        <div class="edu-desc">SDN Periuk<br>2013- 2019</div>
+    </div>
 
-    <!-- Riwayat Pendidikan Section -->
-    <section id="pendidikan">
-        <h2>Perjalanan Pendidikan</h2>
-        <ul class="edu-list">
-            <li>
-                <span class="edu-name">S1 Sistem Informasi - Universitas Pamulang</span><br>
-                <span class="edu-year">2025 - Sekarang</span>
-            </li>
-            <li>
-                <span class="edu-name">SMAN 1 CIRUAS</span><br>
-                <span class="edu-year">2022 - 2025</span>
-            </li>
-            <li>
-                <span class="edu-name">MTSN Negeri 1 Serang</span><br>
-                <span class="edu-year">2019 - 2022</span>
-            </li>
-            <li>
-                <span class="edu-name">SDN Periuk</span><br>
-                <span class="edu-year">2013 - 2019</span>
-            </li>
-        </ul>
-    </section>
+    <div class="edu-item">
+        <div class="edu-title">Sekolah Menengah Pertama (SMP)</div>
+        <div class="edu-desc">MTS Negeri 1 serang<br>2019- 2022</div>
+    </div>
 
-    <!-- Portfolio Proyek Section -->
-    <section id="portfolio">
-        <h2>Portfolio Proyek</h2>
-        
-        <!-- Kelompok Proyek C++ -->
-        <div class="project-group">
-            <h3>Aplikasi C++</h3>
-            
-            <div class="project-card">
-                <h4>1. Codingan Menghitung Nilai Akhir & Kelulusan</h4>
-                <p>Program berbasis C++ untuk melakukan perhitungan akumulasi nilai Tugas, UTS, dan UAS menggunakan pembobotan otomatis serta menentukan status akhir kelulusan mahasiswa.</p>
-                <a href="#" class="project-link" target="_blank">Lihat Repositori &rarr;</a>
-            </div>
+    <div class="edu-item">
+        <div class="edu-title">Sekolah Menengah Atas (SMA)</div>
+        <div class="edu-desc">SMA 1 Ciruas<br>2022- 2025</div>
+    </div>
 
-            <div class="project-card">
-                <h4>2. Codingan Menghitung Ongkos Kirim (Biaya)</h4>
-                <p>Sistem kalkulasi biaya logistik otomatis berbasis C++ menggunakan struktur kontrol switch-case berdasarkan kategori barang dan jarak pengiriman.</p>
-                <a href="#" class="project-link" target="_blank">Lihat Repositori &rarr;</a>
-            </div>
+    <!-- Tentang Saya -->
+    <h3 class="section-title-bold" id="about">Tentang Saya</h3>
+    <p class="intro-text">Saya adalah mahasiswa program studi Sistem Informasi di Universitas Pamulang (UNPAM) Serang dan merupakan lulusan dari SMA 1 Ciruas tahun 2025. Saya memiliki ketertarikan yang besar di bidang teknologi, manajemen basis data, serta analisis sistem.</p>
 
-            <div class="project-card">
-                <h4>3. Codingan Program Konversi Suhu Otomatis</h4>
-                <p>Aplikasi logika aritmatika dasar untuk mengonversi input data suhu berskala Celcius secara instan ke dalam output format fahrenheit dan kelvin.</p>
-                <a href="#" class="project-link" target="_blank">Lihat Repositori &rarr;</a>
-            </div>
-        </div>
+    <!-- Project -->
+    <h3 class="section-title-bold" id="portfolio">Portofolio Saya</h3>
+    
+    <p style="color: #fff; margin-bottom: 5px;">Project1</p>
+    <div class="code-container">
+        <div class="code-header"><span>Coding C++</span><span>RUN &nbsp; MENU</span></div>
+        <pre class="code-block">#include &lt;iostream&gt;
+using namespace std;
 
-        <!-- Kelompok Proyek JStudio Java -->
-        <div class="project-group">
-            <h3>Aplikasi JStudio (Java)</h3>
-            
-            <div class="project-card">
-                <h4>1. Codingan Sistem Informasi Perhotelan & Kasir Nota</h4>
-                <p>Aplikasi kasir perhotelan berbasis Java untuk manajemen jenis kamar, tarif inap, serta kalkulasi potongan harga diskon otomatis berdasarkan keanggotaan member.</p>
-                <a href="#" class="project-link" target="_blank">Lihat Repositori &rarr;</a>
-            </div>
+float hitung_tagihan(float tarif, float durasi, float persen_diskon){
+    float tagihan = tarif * durasi;
+    float potongan = tagihan * (persen_diskon / 100);
+    float tagihan_akhir = tagihan - potongan;
+    return tagihan_akhir;
+}</pre>
+        <div class="compile-header">Compile Result</div>
+        <pre class="compile-result">Masukan tarif sewa:1000
+Masukan durasi sewa(jam):2
+Masukan persen_diskon(%):10
+Tagihan:$1800
 
-            <div class="project-card">
-                <h4>2. Codingan Program Penilaian Akademik Mahasiswa</h4>
-                <p>Aplikasi pengelolaan data nilai multi-mahasiswa berbasis Java menggunakan manipulasi Array, penentuan grade huruf otomatis (A-E), serta fungsi input looping berulang.</p>
-                <a href="#" class="project-link" target="_blank">Lihat Repositori &rarr;</a>
-            </div>
-        </div>
-    </section>
+[Process completed - press Enter]</pre>
+    </div>
+    <span class="project-desc">Program Menghitung Biaya Sewa dengan Diskon di aplikasi c++</span>
 
-    <!-- Kemampuan / Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li><strong>Bahasa Pemrograman:</strong> C++, Java</li>
-            <li><strong>Software & Tools:</strong> JStudio, Coding C++, Canva, Microsoft Word, Excel</li>
-            <li><strong>Kemampuan Bahasa:</strong> Aktif berbahasa Indonesia dan Inggris</li>
-            <li><strong>Keahlian Tambahan:</strong> Analisis data, Mampu menggunakan software desain, Kerja sama tim</li>
-        </ul>
-    </section>
+    <p style="color: #fff; margin-bottom: 5px;">Project2</p>
+    <div class="code-container">
+        <div class="code-header"><span>Coding C++</span><span>RUN &nbsp; MENU</span></div>
+        <pre class="code-block">#include &lt;iostream&gt;
+using namespace std;
 
-    <!-- Kontak / Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p><strong>Email:</strong> mraiyan807@gmail.com</p>
-            <p><strong>No HP:</strong> 085946287211</p>
-            <p><strong>Lokasi:</strong> Ciruas, Serang, Banten, Indonesia</p>
-            <p><strong>Instagram:</strong> <a href="https://instagram.com/raiyann.1" target="_blank" style="color: #58a6ff; text-decoration: none;">@raiyann.1</a></p>
-        </div>
-    </section>
+int hitung_luas(int p, int l){
+    int luas = p * l;
+    return luas;
+}</pre>
+        <div class="compile-header">Compile Result</div>
+        <pre class="compile-result">panjang : 10
+lebar : 15
+Masukkan lebar: 20
+Luasnya :200
 
-    <!-- Footer Dokumen -->
-    <footer>
-        <p>&copy; 2026 Muhammad Raiyan Nashir. Sukses Tugas Akhir Sistem Informasi.</p>
-    </footer>
-</div>
+[Process completed - press Enter]</pre>
+    </div>
+    <span class="project-desc">Program Menghitung Luas Persegi Panjang</span>
 
-</body>
-</html>
+    <!-- Skills -->
+    <h3 id="skills" style="font-weight: bold;">Keahlian Saya</h3>
+    <ul>
+        <li>Desain grafis</li>
+        <li>Microsoft word,excel</li>
+        <li>C++</li>
+    </ul>
+<!-- Hubungi Saya (Semua Berwarna & Bisa Dipencet) -->
+    <h3 id="contact" style="font-weight: bold;">Hubungi Saya</h3>
+    <ul class="contact-list" style="margin-bottom: 30px;">
+        <li>Email: <a href="mailto:mraiyan807@gmail.com" style="color: #3b82f6; text-decoration: underline;">mraiyan807@gmail.com</a></li>
+        <li>No.Hp: <a href="tel:085946287211" style="color: #3b82f6; text-decoration: underline;">085946287211</a></li>
+        <li>Lokasi: <a href="https://maps.google.com/?q=Serang,Banten,Indonesia" target="_blank" style="color: #3b82f6; text-decoration: underline;">Serang, Banten, Indonesia</a></li>
+    </ul>
+
+    <!-- Form Kirim Pesan -->
+    <p style="color: #fff; font-size: 18px; margin-bottom: 5px;">Kirim Pesan</p>
+    <form action="mailto:mraiyan807@gmail.com" method="post" enctype="text/plain" style="margin-bottom: 40px;">
+        <input type="text" name="Nama" placeholder="Nama Lengkap" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <textarea name="Pesan" placeholder="Pesan" rows="3" style="width: 100%; padding: 10px; margin: 8px 0; background: #111; border: 1px solid #333; border-radius: 4px; color: #fff; box-sizing: border-box;" required></textarea>
+        <input type="submit" value="Kirim Pesan" style="background: none; border: none; color: #3b82f6; text-decoration: underline; padding: 0; cursor: pointer; font-size: 16px; text-align: left; display: block; width: auto;">
+    </form>
+
+    <!-- Informasi Kontak Bawah (Ikut Berwarna & Bisa Dipencet) -->
+    <p style="color: #fff; font-size: 18px; margin-bottom: 15px;">Informasi Kontak</p>
+    <ul class="contact-list" style="margin-bottom: 30px;">
+        <li><a href="mailto:mraiyan807@gmail.com" style="color: #3b82f6; text-decoration: underline;">mraiyan807@gmail.com</a></li>
+        <li><a href="tel:+6285946287211" style="color: #3b82f6; text-decoration: underline;">+62 85946287211</a></li>
+        <li><a href="https://maps.google.com/?q=Serang,Banten,Indonesia" target="_blank" style="color: #3b82f6; text-decoration: underline;">Serang, Banten, Indonesia</a></li>
+    </ul>
+
+    <!-- Media Sosial -->
+    <h1 style="font-size: 24px; margin-bottom: 15px;">Media Sosial</h1>
+    <p style="font-size: 16px;">
+        <a href="https://instagram.com/raiyann.1" target="_blank" style="color: #3b82f6; text-decoration: underline; display: flex; align-items: center; gap: 8px;">
+            <i class="fab fa-instagram" style="font-size: 20px;"></i> ig: raiyann.1
+        </a>
+    </p>
